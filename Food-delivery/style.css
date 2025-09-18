@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --lead: #212121;
+    --gold-finger: #F2BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #FCF1CC;
+    --pure-white: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background: var(--eye-ball);
+}
+
+/* Basic-Styling */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+
+
+/* Header-style */
+
+.web-name {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-family: "Bitcount Ink", system-ui;
+}
+
+nav ul {
+
+   gap: 3rem;
+   list-style: none;
+   padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.desktop-actions {
+    padding: 5px;
+   }
+
+.desktop-actions a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem;
+    background: var(--gold-finger);
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 5px black;
+    transition: 0.2s ease-in-out ;
+}
+
+.btn:hover {
+     transform: scale(1.1);
+  }
+
+  .cart-icon {
+  position: relative;
+  color: var(--lead);
+  font-size: 1.3rem;
+  }
+
+ .cart-icon .cart-value {
+    font-size: .90rem;
+    left: 14px;
+    top: 50%;
+    position: absolute;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--gold-finger);
+    color: var(--eye-ball);
+    text-align: center;
+    line-height: 19px;
+  }
+
+  .bars {
+    font-size: 1.3rem; 
+   display: none;
+  }
+/* Section-Styling */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer-Styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media-Quaries */
+@media screen and (max-width: 900px) {
+    .nav-bar, 
+    .btn {
+        display: none;
+    }
+   .bars {
+    display: block;
+   }
+
+}
