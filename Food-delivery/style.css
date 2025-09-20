@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     font-family: "Oswald", sans-serif;
+    /* border: .1rem solid red; */
 }
 
 body {
@@ -23,6 +24,7 @@ body {
 .flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .between {
@@ -33,10 +35,11 @@ body {
     gap: 3rem;
 }
 
+
 .wrapper {
     max-width: 1400px;
     margin: auto;
-    padding: 1.5rem;
+    padding: .5rem;
 }
 
 .list {
@@ -56,7 +59,7 @@ body {
 nav ul {
     gap: 3rem;
     list-style: none;
-   }
+}
 
 nav a {
     text-decoration: none;
@@ -123,7 +126,7 @@ nav a {
 
 /* Section-Styling */
 .hero-section {
-    min-height: calc(100vh - 12vh );
+    min-height: calc(100vh - 12vh);
 }
 
 .social-icons {
@@ -131,13 +134,56 @@ nav a {
     color: black;
 }
 
-.img {
+img {
     max-width: 100%;
     height: auto;
     margin: auto;
+    display: block;
 }
 
+.content,
+.img-container {
+    flex: 1;
+    flex-basis: 350px;
+}
 
+h1 {
+    font-size: 3.9vw;
+    color: var(--lead);
+}
+
+h1 span {
+    color: var(--gold-finger);
+}
+
+p {
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 300;
+}
+
+.para {
+    margin-block: 2.5rem;
+    max-width: 550px;
+}
+
+.social-icons {
+    background: rgb(239, 214, 202);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.05);
+    transition: .8s ease-in-out;
+}
+
+.social-icons:hover {
+    background: var(--lead);
+    color: var(--pure-white);
+}
 
 
 
@@ -173,7 +219,12 @@ nav a {
 
 /* Media-Quaries */
 @media screen and (max-width: 900px) {
-
+ .wrapper {
+    max-width: 500px;
+    margin: auto;
+    padding: 1.9rem;
+}
+    /* Header-Stylinh */
     .nav-bar,
     .desktop-actions .btn {
         display: none;
@@ -209,4 +260,16 @@ nav a {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    /* Section-Styling */
+    h1 {
+        font-size: 3.5rem;
+    }
+
+.content {
+    padding-top: 3rem;
+}
+.gap-2 {
+    gap: 1.4rem;
+}
 }
