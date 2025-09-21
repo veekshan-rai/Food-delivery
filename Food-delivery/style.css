@@ -211,9 +211,9 @@ h5 {
 }
 
 h2 {
-     font-size: 3.7rem;
-     text-transform: capitalize;
-     color: var(--lead);
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: var(--lead);
 }
 
 h3 {
@@ -225,6 +225,22 @@ h3 {
 .service-card {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.order-card {
+    flex: 1;
+    flex-basis: 300px;
+    background: var(--pure-white);
+    padding: 0 0 2rem 0;
+    border: .1rem solid var(--gold-finger);
+    border-radius: 2rem;
+    box-shadow:
+        8px 8px 8px rgba(0, 0, 0, 0.05),
+        8px 8px 8px rgba(0, 0, 0, 0.05) inset;
+}
+
+.order-card img {
+    width: 15rem;
 }
 
 
@@ -257,18 +273,19 @@ h3 {
 
 /* Media-Quaries */
 @media screen and (max-width: 900px) {
- .wrapper {
-    max-width: 500px;
-    margin: auto;
-    padding: 1.9rem;
-}
+    .wrapper {
+        max-width: 500px;
+        margin: auto;
+        padding: 1.9rem;
+    }
+
     /* Header-Stylinh */
     .nav-bar,
     .desktop-actions .btn {
         display: none;
     }
 
-    
+
     .bars {
         display: block;
     }
@@ -305,20 +322,21 @@ h3 {
         font-size: 3.5rem;
     }
 
-.content {
-    padding-top: 3rem;
-}
-.gap-2 {
-    gap: 2rem;
-}
+    .content {
+        padding-top: 3rem;
+    }
 
-.social-icons {
-    margin-bottom: .8rem;
-}
+    .gap-2 {
+        gap: 2rem;
+    }
 
-/* Section1  */
+    .social-icons {
+        margin-bottom: .8rem;
+    }
 
-h2 {
-    font-size: 3rem;
-}
+    /* Section1  */
+
+    h2 {
+        font-size: 2.5rem;
+    }
 }
