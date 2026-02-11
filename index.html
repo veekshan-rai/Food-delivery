@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="style.css">
-    <script defer src="App.js"></script>
+
 </head>
 
 <body>
@@ -48,11 +48,12 @@
                 <li> <a href="#">Contacts</a></li>
                 <li>
                     <a href="#" class="btn flex" style="color: #FFF;">Sign-in &nbsp;<i
-                            class="fa-solid fa-right-to-bracket"></i> </a>
+                            class="fa-solid fa-right-to-bracket"></i>
+                    </a>
                 </li>
+            </ul>
+            </nav>
         </div>
-        </ul>
-        </nav>
         </div>
     </header>
 
@@ -64,7 +65,7 @@
                     <span>Delivered in Minutes!</span>
                 </h1>
                 <p class="para">Why step out? Snack smarter with Quick Bite at your fingertips.</p>
-                <div class="flex gap-3 gap-2">
+                <div class="flex gap-1">
                     <a href="#" class="btn">Order Now</a>
 
                     <a href="#" class="social-icons">
@@ -131,23 +132,167 @@
                     <h2>The Most Popular</h2>
                 </div>
 
-                <div class="card-list text-center wrapper flex p-top ">
+                <!-- <div class="card-list text-center wrapper flex p-top ">
 
 
-                    <!-- <div class="order-card">
+                    <div class="order-card">
                 <div class="card-img">
                     <img src="img/burger.png">
                 </div>
-                <h4>Double Beef </h4>
+                <h4>Double Chicken </h4>
                 <p class="price">$200</p>
                 <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+                </div>
             </div> -->
+        </section>
+
+        <section>
+            <div class="wrapper p-top flex gap-1 ">
+                <div class="img-container">
+                    <img src="img/img11.png">
+                </div>
+                <div class="content ">
+                    <h5>Our reviews</h5>
+                    <h2>What they say?</h2>
+                    <div class="review-container ">
+
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="img/AyushProfile.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>Ayush Acharya</h3>
+                                            <div class="mrt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">“QuickBite never disappoints!” I had an amazing experience with
+                                        QuickBite. The
+                                        food was fresh, flavorful, and
+                                        delivered right on time.</p>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="img/veekshanprofile.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>Veekshan Rai</h3>
+                                            <div class="mrt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">I ordered dinner late at night and was surprised by how fast it
+                                        arrived.
+                                        tracking the order was smooth. Definitely my go-to app when I don’t feel like
+                                        cooking!
+                                    </p>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="img/sujanProfile.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>Sujan Poojary</h3>
+                                            <div class="mrt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">“Delivery was late and food was cold” <br>
+                                        The app is easy to use, but my order arrived much later than expected. By the
+                                        time it reached me, the food was cold and not fresh.</p>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="img/speedProfile.jpeg" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>IShowSpeed</h3>
+                                            <div class="mrt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">BRO THIS FOOD WAS CRAZY!!”
+                                        <br>
+                                        AYO CHAT 😤 I ordered food and it came FAST FAST. The food was HOT, crispy, and
+                                        smelled CRAZY good. I opened the box and I was like OOOHHH MY GAWDDDD 😱💥
+                                        No cap. If you hungry and you
+                                        don’t order from this app, YOU TWEAKIN 😤🔥
+                                        <br>
+                                        — IShowSpeed
+                                    </p>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="img/CrProfile.jpeg" alt="">
+                                        </div>
+                                        <div>
+                                            <h3>Cristiano Ronaldo</h3>
+                                            <div class="mrt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="para">
+                                        Siuuu! 🐐🔥 Fast delivery, quality food — discipline and consistency.
+                                        This is how champions eat. 💪🍽️ SIUUUU!
+                                    </p>
+                                </div>
+
+
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-           
+            <div class="wrapper p-top app-cont">
+                <div class="app-img">
+                    <img src="" alt="">
+                </div>
+            </div>
         </section>
     </main>
 
@@ -159,6 +304,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="App.js"></script>
 </body>
 
 </html>
