@@ -55,7 +55,7 @@ body {
     padding: .5rem;
 }
 
-.list {
+li {
     list-style: none;
 }
 
@@ -75,12 +75,21 @@ body {
     margin: auto;
 }
 
+.mt-one-half {
+    margin-top: 1.5rem;
+}
+
+
+
+
 /* Header-style */
 
 .web-name {
-    color: rgb(0, 0, 0);
+    color: var(--gold-finger);
     font-family: "Biticount Ink, system-u";
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    text-decoration: none; 
+       
 }
 
 nav ul {
@@ -370,17 +379,49 @@ input[type="email"]:focus {
     margin-top: 10rem;
     padding-block: 4rem;
     background-color: var(--hint-yellow);
+    border-radius: 1rem;
+}
+
+.footer-container .flex {
+    align-items: flex-start;
+    
 }
 
 
-.fooetr-wrapper {
+.footer-wrapper {
     flex: 1;
+    flex-basis: 150px;
+    margin-left: 20px;
+    
+}
+
+.footer-wrapper:nth-child(1) {
+    flex: 2;
+    flex-basis: 300px;
+}
+
+.footer-wrapper .social-icons {
+    background: var(--pure-white);
+}
+
+.footer-wrapper .social-icons:hover {
+    background: var(--lead);
+    color: var(--pure-white);
 }
 
 
 
 
+.footer-link {
+    text-decoration: none;
+    color: #787575;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
 
+.footer-link:hover {
+    color: var(--lead);
+}
 
 
 
@@ -491,4 +532,13 @@ h3 {
    .app-container .app-content h3 {
     font-size: 3.5rem;
    } 
+
+   /* Footer */
+   .footer-container {
+    width: 280px;
+    margin-left: 25px;
+   }
+   .footer-wrapper {
+    margin-top: 25px;
+   }
 }
