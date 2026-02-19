@@ -254,6 +254,9 @@ h3 {
     margin-bottom: 1rem;
 }
 
+
+/* SECTION-2 */
+
 .order-card {
     flex: 1;
     flex-basis: 300px;
@@ -286,12 +289,94 @@ h4 {
     gap: 2rem;
 }
 
-/* section-3 */
+/* CART-TAB */
+.cart-tab {
+    background: var(--hint-yellow);
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: 25rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.cart-list {
+    flex: 1;
+    width: 100%;
+}
+
+.total-container {
+    width: 100%;
+    background-color: var(--gold-finger);
+    text-align: center;
+    margin-block: 1rem;
+    padding-block:1rem;  
+}
+.total-container h4 {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cart-btn .btn {
+background: var(--lead);
+transition: 0.3 ease-in-out;
+}
+
+.cart-btn .btn:hover {
+    background: var(--gold-finger);
+    color: var(--lead);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    padding: .7rem .5rem;
+}
+
+.item .item-img-container img {
+    width: 5rem;
+}
+
+.item h4 {
+    font-size: 1.3rem;
+    color: var(--lead);
+}
+
+.item .item-price {
+    font-weight: 400;
+    margin-top: .3rem;
+}
+
+.quantity-btn {
+    background: var(--lead);
+    color: var(--pure-white);
+    width: 1.7rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+.quantity {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-inline: .6rem;
+}
+
+/* section-3 */
+.review-container {
+    width: 650px;
+    max-width: 100%;
+    flex: 1;
+}
 /* Sliders */
+
 .swiper {
-    width: 690px;
-    height: 290px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     margin-top: 55px;
 }
@@ -432,6 +517,9 @@ input[type="email"]:focus {
 
 /* Media-Quaries */
 @media screen and (max-width: 900px) {
+    .gaps-4 {
+        gap: 4;
+    }
     .wrapper {
         max-width: 500px;
         margin: auto;
@@ -499,31 +587,7 @@ input[type="email"]:focus {
         font-size: 2.5rem;
     }
 
-    /* section-3 */
-/* .swiper {
-    width: 290px;
-    max-width: 400px;
-    height: 410px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
-}
-
-h3 {
-    font-size: 1rem;
-}
-
-.swiper-slide {
-    top: 20px;
-}
-.swiper-slide p {
-    padding: 5px 10px;
-} */
-
-
-
-
-
-   /* section-4 */
+    /* section-4 */
    .app-container {
     padding: 2.2rem;
     border-radius: 1rem;
@@ -536,8 +600,8 @@ h3 {
    /* Footer */
    .footer-container {
     width: 280px;
-    margin-left: 25px;
-   }
+  }
+
    .footer-wrapper {
     margin-top: 25px;
    }
