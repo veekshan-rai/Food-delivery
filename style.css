@@ -304,10 +304,12 @@ h4 {
     z-index:110;
     box-shadow: 
     rgb(0, 0, 0, 0.3) -5px -5px 20px;
+    transition: 0.5s ease-in-out;
 }
 
 .cart-tab-active {
     inset: 0 0 0 auto;
+    transition: 0.5s ease-in-out;
 }
 
 .cart-list {

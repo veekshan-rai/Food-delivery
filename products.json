@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Double Chicken Burger",
+        "price": "$10",
+        "image": "img/burger.png"
+    },
+    {
+        "id": 2,
+        "name": "Veggie Pizza",
+        "price": "$15",
+        "image": "img/pizza.png"
+    },
+    {
+        "id": 3,
+        "name": "Fried Chicken",
+        "price": "$5",
+        "image": "img/fried-chicken.png"
+    },
+    {
+        "id": 4,
+        "name": "Double Chicken Burger",
+        "price": "$100",
+        "image": "img/burger.png"
+    },
+    {
+        "id": 5,
+        "name": "Double Chicken Burger",
+        "price": "$100",
+        "image": "img/burger.png"
+    },
+    {
+        "id": 6,
+        "name": "Double Chicken Burger",
+        "price": "$100",
+        "image": "img/burger.png"
+    },
+    {
+        "id": 7,
+        "name": "Double Chicken Burger",
+        "price": "$100",
+        "image": "img/burger.png"
+    },
+    {
+        "id": 8,
+        "name": "Double Chicken Burger",
+        "price": "$100",
+        "image": "img/burger.png"
+    }
+  
+]
