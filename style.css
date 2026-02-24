@@ -350,9 +350,11 @@ transition: 0.3 ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: .7rem 1rem;
 }
+
+
 
 .item .item-img-container img {
     width: 5rem;

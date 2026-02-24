@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Double Chicken Burger",
+        "name": "Chicken Burger",
         "price": "$10",
         "image": "img/burger.png"
     },
@@ -19,33 +19,33 @@
     },
     {
         "id": 4,
-        "name": "Double Chicken Burger",
-        "price": "$100",
-        "image": "img/burger.png"
+        "name": "Chicken roll",
+        "price": "$10",
+        "image": "img/chicken-roll.png"
     },
     {
         "id": 5,
-        "name": "Double Chicken Burger",
-        "price": "$100",
-        "image": "img/burger.png"
+        "name": "Lasagna",
+        "price": "$7",
+        "image": "img/lasagna.png"
     },
     {
         "id": 6,
-        "name": "Double Chicken Burger",
+        "name": "Sandwich",
         "price": "$100",
-        "image": "img/burger.png"
+        "image": "img/sandwich.png"
     },
     {
         "id": 7,
-        "name": "Double Chicken Burger",
+        "name": "Spaghetti",
         "price": "$100",
-        "image": "img/burger.png"
+        "image": "img/spaghetti.png"
     },
     {
         "id": 8,
-        "name": "Double Chicken Burger",
+        "name": "Spring Roll",
         "price": "$100",
-        "image": "img/burger.png"
+        "image": "img/spring-roll.png"
     }
   
 ]
