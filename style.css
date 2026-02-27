@@ -352,9 +352,16 @@ transition: 0.3 ease-in-out;
     justify-content: center;
     gap: 1.5rem;
     padding: .7rem 1rem;
+    transition: all .2s ease-in-out;
 }
 
+ .slide-out {
+    transform: translateX(100%);
+}
 
+.item .detail {
+flex: 2;
+}
 
 .item .item-img-container img {
     width: 5rem;
