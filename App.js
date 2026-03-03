@@ -20,6 +20,14 @@ const closeBtn = document.querySelector(".close-btn");
 const cardList = document.querySelector(".card-list");
 const cartList = document.querySelector(".cart-list")
 const total = document.querySelector('.cart-price');
+const cartValue = document.querySelector('.cart-value');
+const hamburger = document.querySelector('.bars');
+const mobileMenue = document.querySelector('.mobile-menue')
+
+//MenuBar In meduaQuary
+hamburger.addEventListener('click', () => {
+  mobileMenue.classList.toggle('mobile-menue-active');
+})
 
 // Cart 
 cartIcon.addEventListener('click', () =>
@@ -35,15 +43,24 @@ closeBtn.addEventListener('click', () => {
 let productList = [];
 let cartProducts = [];
 
-// const UpadetTotals = () => {
-//   let totalPrice = 0;
-//   document.querySelectorAll('.item').forEach(item => {
-//     const price = item.querySelector('.item-price').textContent.replace('$', '');
-//     totalPrice = totalPrice + price;
-//   })
-//   total.textContent = `$${totalPrice}`;
-// }
+// Total Price Calculate
+const UpadetTotals = () => {
+  let totalPrice = 0;
+  let totalQantity = 0;
 
+  document.querySelectorAll('.item').forEach(item => {
+    const quantity = Number(item.querySelector('.quantity').textContent)
+
+    const price = Number(item.querySelector('.item-price').textContent.replace('$',''));
+    totalPrice = totalPrice + price;
+    totalQantity += quantity;
+  })
+  total.textContent = `$${totalPrice}`;
+  cartValue.textContent = totalQantity;
+
+}
+
+// **
 
 const ShowCards = () => {
   productList.forEach(product => {
@@ -105,7 +122,7 @@ const addToCart = (product) => {
 `
 
   cartList.appendChild(cartItem)
-  // UpadetTotals();
+  UpadetTotals();
   const plusBtn = cartItem.querySelector('.plus');
   const minusBtn = cartItem.querySelector('.minus');
   const quantityValues = cartItem.querySelector('.quantity');
@@ -117,6 +134,7 @@ const addToCart = (product) => {
     quantityValues.textContent = quantitys;
 
     totalPrice.textContent = `$${price * quantitys}`
+    UpadetTotals();
   })
 
   minusBtn.addEventListener('click', (e) => {
@@ -125,11 +143,13 @@ const addToCart = (product) => {
       quantitys--;
       quantityValues.textContent = quantitys;
       totalPrice.textContent = `$${price * quantitys}`
+      UpadetTotals();
     } else {
       cartItem.classList.add('slide-out')
       setTimeout(() => {
         cartItem.remove();
         cartProducts = cartProducts.filter(item => item.id !== product.id)
+        UpadetTotals();
       }, 300)
     }
   })
