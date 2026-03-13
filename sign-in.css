@@ -104,3 +104,22 @@ font-size:24px;
 }
 
 }
+
+ .register-box {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+a:active {
+    color: blue;
+}
